@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Deligatu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e42d9d347787194031405f97638cd03938076d39")]
 [assembly: System.Reflection.AssemblyProductAttribute("Deligatu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Deligatu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

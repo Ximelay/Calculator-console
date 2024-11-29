@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace Deligatu
 {
@@ -25,19 +26,17 @@ namespace Deligatu
             bool isError = false;
             string errorMessage = string.Empty;
 
+            // Рисуем кнопки
+            DrawButtons();
+
             while (true)
             {
-                Console.Clear();
-                Console.WriteLine(" ======Калькулятор=================");
-                Console.WriteLine($"|[               {currentInput} ]|");
-                Console.WriteLine(" |================================|");
-                Console.WriteLine(" |[  1  ] [  2  ] [  3  ] [  +  ]| ");
-                Console.WriteLine(" |[  4  ] [  5  ] [  6  ] [  -  ]| ");
-                Console.WriteLine(" |[  7  ] [  8  ] [  9  ] [  *  ]| ");
-                Console.WriteLine(" |[  0  ] [  .  ] [  =  ] [  /  ]| ");
-                Console.WriteLine(" ==================================");
+                // Позиционируем вывод под кнопками
+                Console.SetCursorPosition(0, 8);
 
-                // Если есть ошибка, то выводим её
+                Console.WriteLine(" ======Калькулятор=================");
+                Console.WriteLine($"     {currentInput}               ");
+
                 if (isError)
                 {
                     Console.WriteLine($"Ошибка: {errorMessage}");
@@ -68,8 +67,8 @@ namespace Deligatu
                             string expression = currentInput.ToString();
                             result = EvaluateExpression(expression, operations);
                             isResultDisplayed = true;
-                            currentInput.Clear();
-                            currentInput.Append(result);
+                            currentInput.Clear(); 
+                            currentInput.Append(result); 
                             isError = false;
                         }
                         catch (Exception ex)
@@ -81,7 +80,6 @@ namespace Deligatu
                 }
                 else if (keyInfo.Key == ConsoleKey.Backspace)
                 {
-                    // Обработка Backspace для удаления символов
                     if (currentInput.Length > 0)
                     {
                         currentInput.Remove(currentInput.Length - 1, 1); // Удаляем последний символ
@@ -100,6 +98,7 @@ namespace Deligatu
                     }
 
                     currentInput.Append(keyInfo.KeyChar);
+                    FlashButton(keyInfo.KeyChar.ToString());
                 }
                 else if (keyInfo.Key == ConsoleKey.OemPlus || keyInfo.Key == ConsoleKey.OemMinus ||
                          keyInfo.Key == ConsoleKey.Multiply || keyInfo.Key == ConsoleKey.Divide)
@@ -112,6 +111,7 @@ namespace Deligatu
                     }
 
                     currentInput.Append(keyInfo.KeyChar);
+                    FlashButton(keyInfo.KeyChar.ToString());
                 }
                 else if (keyInfo.Key == ConsoleKey.OemPeriod)
                 {
@@ -130,6 +130,7 @@ namespace Deligatu
                     }
 
                     currentInput.Append(keyInfo.KeyChar);
+                    FlashButton(keyInfo.KeyChar.ToString());
                 }
 
                 if (isError)
@@ -140,6 +141,41 @@ namespace Deligatu
             }
         }
 
+        // Метод для рисования всех кнопок
+        static void DrawButtons()
+        {
+            Console.SetCursorPosition(0, 2);
+            Console.WriteLine(" |[  1  ] [  2  ] [  3  ] [  +  ]|");
+            Console.WriteLine(" |[  4  ] [  5  ] [  6  ] [  -  ]|");
+            Console.WriteLine(" |[  7  ] [  8  ] [  9  ] [  *  ]|");
+            Console.WriteLine(" |[  0  ] [  .  ] [  =  ] [  /  ]|");
+            Console.WriteLine(" ==================================");
+        }
+
+        // Метод для мигания кнопки
+        static void FlashButton(string key)
+        {
+            Dictionary<string, (int left, int top)> buttonsPositions = new Dictionary<string, (int, int)>()
+            {
+                {"1", (4, 2) }, {"2", (12, 2) }, {"3", (20, 2) }, {"4", (4, 3) },
+                {"5", (12, 3) }, {"6", (20, 3) }, {"7", (4, 4) }, {"8", (12, 4) },
+                {"9", (20, 4) }, {"0", (4, 5) }, {".", (12, 5) }, {"+", (28, 2) },
+                {"-", (28, 3) }, {"*", (28, 4) }, {"/", (28, 5) }
+            };
+
+            if (buttonsPositions.ContainsKey(key))
+            {
+                var pos = buttonsPositions[key];
+                Console.SetCursorPosition(pos.left, pos.top);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write($"[{key}]");
+                Thread.Sleep(200);
+                Console.SetCursorPosition(pos.left, pos.top);
+                Console.ForegroundColor = ConsoleColor.White;
+                DrawButtons();
+            }
+        }
+
         // Вычисление выражения с несколькими операциями
         static double EvaluateExpression(string expression, Dictionary<string, Operation> operations)
         {
@@ -147,7 +183,6 @@ namespace Deligatu
             {
                 var tokens = TokenizeExpression(expression);
 
-                // Применение операций
                 double result = double.Parse(tokens[0]);
                 for (int i = 1; i < tokens.Count; i += 2)
                 {

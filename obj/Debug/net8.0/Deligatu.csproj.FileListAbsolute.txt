@@ -26,3 +26,4 @@ C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\refint\Deligatu.dll
 C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.pdb
 C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.genruntimeconfig.cache
 C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\ref\Deligatu.dll
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.sourcelink.json
