@@ -1,0 +1,28 @@
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.exe
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.deps.json
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.runtimeconfig.json
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.dll
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.pdb
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.AssemblyInfoInputs.cache
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.AssemblyInfo.cs
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.csproj.CoreCompileInputs.cache
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.dll
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\refint\Deligatu.dll
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.pdb
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.genruntimeconfig.cache
+C:\Users\Ximelay\Desktop\Deligatu\Deligatu\obj\Debug\net8.0\ref\Deligatu.dll
+C:\Projects\Visual Studio\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.exe
+C:\Projects\Visual Studio\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.deps.json
+C:\Projects\Visual Studio\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.runtimeconfig.json
+C:\Projects\Visual Studio\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.dll
+C:\Projects\Visual Studio\Deligatu\Deligatu\bin\Debug\net8.0\Deligatu.pdb
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.AssemblyInfoInputs.cache
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.AssemblyInfo.cs
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.csproj.CoreCompileInputs.cache
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.dll
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\refint\Deligatu.dll
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.pdb
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\Deligatu.genruntimeconfig.cache
+C:\Projects\Visual Studio\Deligatu\Deligatu\obj\Debug\net8.0\ref\Deligatu.dll

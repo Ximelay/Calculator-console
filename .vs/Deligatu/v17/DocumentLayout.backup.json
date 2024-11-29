@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projects\\Visual Studio\\Deligatu\\Deligatu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2198C4-02A3-4EBE-84B8-9ED4A8585EA7}|Deligatu.csproj|c:\\projects\\visual studio\\deligatu\\deligatu\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2198C4-02A3-4EBE-84B8-9ED4A8585EA7}|Deligatu.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2198C4-02A3-4EBE-84B8-9ED4A8585EA7}|Deligatu.csproj|c:\\projects\\visual studio\\deligatu\\deligatu\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2198C4-02A3-4EBE-84B8-9ED4A8585EA7}|Deligatu.csproj|solutionrelative:testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestClass.cs",
+              "DocumentMoniker": "C:\\Projects\\Visual Studio\\Deligatu\\Deligatu\\TestClass.cs",
+              "RelativeDocumentMoniker": "TestClass.cs",
+              "ToolTip": "C:\\Projects\\Visual Studio\\Deligatu\\Deligatu\\TestClass.cs",
+              "RelativeToolTip": "TestClass.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T02:02:27.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projects\\Visual Studio\\Deligatu\\Deligatu\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Projects\\Visual Studio\\Deligatu\\Deligatu\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAuwCMAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T01:33:51.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
